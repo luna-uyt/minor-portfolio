@@ -20,7 +20,7 @@ try{const stored=localStorage.getItem(STORAGE_KEY);if(stored)projects=normalize(
 function persist(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify({version:1,projects}));storageProblem=false;status.textContent='✓ Opgeslagen in deze browser';return true;}catch{storageProblem=true;status.textContent='Niet in browser opgeslagen. Maak nu een reservekopie om je wijzigingen te bewaren.';return false;}}
 function visual(p){
   if(p.image&&safeURL(p.image))return `<img src="${safeURL(p.image)}" alt="${escapeHTML(p.imageAlt)}" loading="lazy">`;
-  if(p.id==='green-stories')return '<div class="green-visual" aria-label="Tijdelijke illustratie Green Stories"><span class="story-card back">?</span><span class="story-card front"><small>GREEN</small><strong>stories</strong><span>?</span></span><span class="visual-caption">Spelconcept · projectfoto volgt</span></div>';
+  if(p.id==='green-stories')return '<div class="green-visual real-story-cards"><span class="story-card-layout"><span class="real-story-card card-back"><img src="assets/green-stories-achterkant.png" alt="Achterkant van de Green Stories-kaart met de oplossing, schuin achter de voorkant" loading="lazy"></span><span class="real-story-card card-front"><img src="assets/green-stories-voorkant.png" alt="Voorkant van de Green Stories-kaart: De container achter het restaurant" loading="lazy"></span></span></div>';
   return '<div class="empty-visual"><span>＋</span>Ruimte voor jouw beeld</div>';
 }
 function render(){
