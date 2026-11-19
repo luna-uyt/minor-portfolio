@@ -1,0 +1,54 @@
+LUNA — MINORPORTFOLIO
+
+Lokaal bekijken: open index.html in je browser. Er is niets gepubliceerd
+en er is geen GitHub-repository aangemaakt.
+
+PROJECT TOEVOEGEN
+Open projects.js in een teksteditor en kopieer een projectblok.
+Geef het een unieke id en vul de titel, soort en korte beschrijving in.
+De volgorde van de blokken bepaalt de tijdlijn. Deze volgorde is nu een
+voorbeeld, want de echte afrondingsvolgorde is nog niet opgegeven.
+
+Opdracht, aanpak en resultaat zijn korte teksten. Proces is optioneel:
+als je dit leeg laat, verschijnt er geen procesonderdeel.
+
+FOTO'S TOEVOEGEN
+Plaats foto's in assets. Vul image in voor het omslagbeeld.
+Voor extra foto's gebruik je bijvoorbeeld:
+photos: [{ src: 'assets/mijn-foto.jpg', alt: 'Beschrijving van de foto',
+           caption: 'Optioneel onderschrift' }]
+
+VORMGEVING
+Kleuren en afmetingen staan in style.css. De lettertypen DM Sans en
+Caveat benaderen de voorbeelden; het zijn nog niet de bevestigde
+Canva-lettertypen. Google Fonts vraagt hiervoor een internetverbinding.
+Zonder internet gebruikt de browser de beschikbare reservelettertypen.
+Green Stories heeft een tijdelijke grafische illustratie, geen projectfoto.
+
+Een portret is bewust nog niet toegevoegd. Er zijn ook geen projectdata,
+uitgebreide projectteksten of beoordelingsresultaten verzonnen.
+
+BEWERKEN OP DE WEBSITE
+Klik bovenaan op 'Portfolio bewerken'. Je hoeft projects.js niet te openen.
+- Verplaats projecten met de sleepgreep of met de pijltjes omhoog/omlaag.
+- Klik op 'Bewerken' bij een project, of open een project en klik op
+  'Dit project bewerken'.
+- Pas nummer, titel, ondertitel, soort, link en omslagbeeld aan.
+- Pas tekstblokken en hun koppen aan, voeg blokken toe of wijzig hun volgorde.
+- Voeg foto's vanaf je computer toe, met beschrijvingen en onderschriften.
+- Klik op Opslaan. Annuleren laat het project ongewijzigd.
+- Laat het nummer leeg om automatisch mee te nummeren na verplaatsen.
+- 'Nieuw project' voegt een project via hetzelfde formulier toe.
+
+BEWAREN EN RESERVEKOPIE
+Wijzigingen staan alleen in de opslag van de browser waarin je bewerkt.
+Ze veranderen de originele projects.js niet en worden niet online gezet.
+Gebruik daarom regelmatig 'Reservekopie opslaan'. Dit JSON-bestand bevat
+alle bewerkte projecten en de zelf toegevoegde foto's. Open het later via
+'Reservekopie openen', ook als je van browser of computer wisselt.
+Gebruik steeds hetzelfde index.html-bestand in dezelfde browser.
+Bij een ander adres, een andere map of het wissen van browsergegevens
+kunnen je opgeslagen wijzigingen ontbreken; open dan je reservekopie.
+Als browseropslag vol of geblokkeerd is, verschijnt een melding. Je werk
+blijft dan tijdelijk zichtbaar: download meteen een reservekopie.
+Afbeeldingen worden verkleind tot maximaal 1400 pixels om ruimte te sparen.

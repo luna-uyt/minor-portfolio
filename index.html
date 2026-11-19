@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Luna — portfolio Circulaire Economie</title>
+  <meta name="description" content="Het minorportfolio van Luna. Projecten en opdrachten tijdens de minor Circulaire Economie aan de HAN in Arnhem.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#projecten">Naar mijn projecten</a>
+  <header class="navigation"><a class="wordmark" href="#">luna<span>✳</span></a><nav aria-label="Hoofdnavigatie"><a href="#projecten">Mijn projecten <span>↗</span></a><a href="#over">Over dit portfolio</a></nav><span class="edition">SEPTEMBER — JANUARI</span></header>
+  <aside class="editor-bar" aria-label="Portfolio beheren"><button id="toggle-edit" type="button" aria-pressed="false">✎ Portfolio bewerken</button><div id="editor-actions" hidden><button id="add-project" type="button">＋ Nieuw project</button><button id="export-data" type="button">Reservekopie opslaan ↓</button><label class="import-label">Reservekopie openen ↑<input id="import-data" type="file" accept=".json,application/json" hidden></label></div><span id="save-status" role="status" aria-live="polite"></span></aside>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-meta"><span>MINOR CIRCULAIRE ECONOMIE<br><span style="display:inline-block;margin-top:9px;color:var(--muted)">SEPTEMBER — JANUARI</span></span><span>HAN · ARNHEM</span></div>
+      <h1 id="hero-title">portfolio<span class="period">.</span></h1>
+      <p class="signature">Luna</p>
+      <div class="hero-bottom"><p>Een verzameling van wat ik<br>ontdek, maak en uitwerk.</p><a class="round-link" href="#projecten" aria-label="Ontdek mijn projecten">↓</a><span class="hero-note">Van idee naar resultaat.<svg viewBox="0 0 150 35" aria-hidden="true"><path d="M5 10 Q65 35 135 9 M120 4 L139 8 L126 22"/></svg></span></div>
+      <span class="spark" aria-hidden="true">✳</span>
+    </section>
+    <section class="projects" id="projecten" aria-labelledby="projects-title">
+      <div class="section-top"><div><p class="eyebrow">MIJN MINOR, PROJECT VOOR PROJECT</p><h2 id="projects-title">gemaakt<span class="hand">& geleerd</span></h2></div><p>Volg mijn werk langs een tijdlijn<br>van afgeronde projecten.</p></div>
+      <div class="timeline-start"><span>De start</span><span>September</span></div>
+      <div class="timeline" id="timeline"></div>
+      <div class="timeline-end"><span class="end-dot">✳</span><h3>En verder…</h3><p>Ruimte voor nieuwe projecten en ontdekkingen.</p><span class="small-label">JANUARI · EN DAARNA</span></div>
+    </section>
+    <section class="about" id="over"><img src="assets/circulair.png" alt="" width="90" height="90"><div><p class="eyebrow">OVER DIT PORTFOLIO</p><h2>Een minor.<br>Mijn ontwikkeling.</h2><p>Ik ben Luna en volg de minor Circulaire Economie aan de HAN in Arnhem. Van september tot januari verzamel ik hier mijn projecten en opdrachten.</p><p>Dit portfolio groeit mee met wat ik maak — ook na de minor.</p></div><span class="about-signature">Luna</span></section>
+  </main>
+  <footer><a class="wordmark" href="#">luna<span>✳</span></a><p>Circulaire Economie · HAN Arnhem</p><a href="#">Terug naar boven ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="detail-title"><button class="close" type="button" aria-label="Sluit project">×</button><div id="detail-content"></div></dialog>
+  <dialog id="edit-dialog" aria-labelledby="edit-title"><form id="project-form"><div class="edit-heading"><div><p class="eyebrow">MAAK HET JE EIGEN</p><h2 id="edit-title">Project bewerken</h2></div><button type="button" class="cancel-edit" aria-label="Sluit bewerken">×</button></div><p class="edit-hint">Pas je tijdlijnkaart en projectvenster aan. Klik op Opslaan om wijzigingen toe te passen.</p><div class="form-grid"><label>Nummer op de tijdlijn<input name="number" placeholder="Automatisch op volgorde"><small>Laat leeg voor automatische nummering.</small></label><label>Soort / label<input name="type"></label><label class="wide">Titel<input name="title" required maxlength="150"></label><label class="wide">Ondertitel op de tijdlijn<textarea name="summary" rows="2"></textarea></label><label class="wide">Link naar het resultaat<input name="url" type="url" placeholder="https://…"></label></div><h3>Omslagbeeld</h3><div id="cover-preview"></div><div class="upload-row"><label class="upload-button">Afbeelding kiezen<input id="cover-upload" type="file" accept="image/*" hidden></label><button id="remove-cover" type="button">Afbeelding verwijderen</button></div><label>Beschrijving van het omslagbeeld<input name="imageAlt" placeholder="Wat is er te zien?"></label><div class="edit-section-title"><h3>Inhoud van je project</h3><button id="add-section" type="button">＋ Tekstblok</button></div><p class="edit-hint">Ook koppen zijn aanpasbaar. Lege tekstblokken worden in je portfolio verborgen.</p><div id="section-fields"></div><div class="edit-section-title"><h3>Project- en procesfoto’s</h3><label class="upload-button">＋ Foto’s toevoegen<input id="photos-upload" type="file" accept="image/*" multiple hidden></label></div><div id="photo-fields"></div><p id="form-status" role="status" aria-live="polite"></p><div class="form-footer"><button type="button" class="cancel-edit">Annuleren</button><button type="submit" class="save-project">Opslaan ✓</button></div></form></dialog>
+  <script src="projects.js"></script><script src="app.js"></script>
+</body>
+</html>
