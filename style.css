@@ -13,3 +13,7 @@
 .real-story-card.card-back{top:14%;left:18%;z-index:1;transform:rotate(-17deg)}
 .real-story-card.card-back img{width:128.48%;height:115.81%;left:-14.24%;top:-10.02%}
 .story-card-layout{position:relative;display:block;height:100%;aspect-ratio:456/352;max-width:100%;margin:0 auto}
+/* Strak binnen de kaartrand uitsnijden: geen witte paginarand meenemen. */
+.real-story-card{aspect-ratio:296/442;border-radius:4.1% / 2.75%;border:1px solid #006447}
+.real-story-card.card-front img{width:130.74%;height:116.52%;left:-15.54%;top:-9.95%}
+.real-story-card.card-back img{width:131.08%;height:117.38%;left:-15.54%;top:-10.84%}
